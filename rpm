@@ -1,0 +1,22 @@
+RPM has five basic modes of operation 
+Installing
+Uninstalling
+Upgrading
+Querying
+Verifying
+To complete details and options, try 
+rpm –help
+       or
+ man rpm
+ RPM packages typically have file names like foo-1.0-1.i386.rpm. The file name includes the package name (foo), version (1.0), release (1), and architecture (i386). 
+To install a package, log in as root and type the following command at a shell prompt:
+                                         rpm -ivh foo-1.0-1.i386.rpm
+
+    i –install   
+   v – verbose
+   h - hash
+Upgrading a package is similar to installing one. Type the following command at a shell prompt:
+    
+        rpm -Uvh foo-2.0-1.i386.rpm
+
+As part of upgrading a package, RPM automatically uninstalls any old versions of the foo package. Note that -U will also install a package even when there are no previous versions of the package installed.
